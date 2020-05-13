@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  大话设计模式 - 
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+<div id="header">
+    <h1><a href="index.html"></a></h1>
+</div>
+
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; </span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>前端开发</label></li>
+
+          
+
+      
+        <li class="divider"></li>
+        <li><label>读书</label></li>
+
+          
+            <li><a title="甲骨文丛书" href="15691258275589.html">甲骨文丛书</a></li>
+          
+            <li><a title="书单 李源 五位一体" href="15606507457992.html">书单 李源 五位一体</a></li>
+          
+            <li><a title="书单如何阅读一本书" href="15605970038996.html">书单如何阅读一本书</a></li>
+          
+            <li><a title="理财类数据" href="15605744592085.html">理财类数据</a></li>
+          
+            <li><a title="书单 熊猫书院 十个月自我提升计划" href="15605743974764.html">书单 熊猫书院 十个月自我提升计划</a></li>
+          
+
+      
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+        <section id="main-content" role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
+
+                    
+                      <li class="side-title"><span>前端开发</span></li>
+                        
+
+                    
+                      <li class="side-title"><span>读书</span></li>
+                        
+                          <li><a title="甲骨文丛书" href="15691258275589.html">甲骨文丛书</a></li>
+                        
+                          <li><a title="书单 李源 五位一体" href="15606507457992.html">书单 李源 五位一体</a></li>
+                        
+                          <li><a title="书单如何阅读一本书" href="15605970038996.html">书单如何阅读一本书</a></li>
+                        
+                          <li><a title="理财类数据" href="15605744592085.html">理财类数据</a></li>
+                        
+                          <li><a title="书单 熊猫书院 十个月自我提升计划" href="15605743974764.html">书单 熊猫书院 十个月自我提升计划</a></li>
+                        
+
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
+
+ <div class="markdown-body">
+<h1>大话设计模式</h1>
+
+<ol>
+<li>面向对象的思维方式
+<ol>
+<li>封装变化</li>
+</ol></li>
+<li>面向对象的好处
+<ol>
+<li>可维护，只需要修改对应的部分。</li>
+<li>可复用，可以重复使用。</li>
+<li>可拓展，可以按照规则增加。</li>
+<li>灵活性，可以做排列组合。</li>
+</ol></li>
+<li>面向对象的特性：
+<ol>
+<li>封装：业务逻辑和界面逻辑分开。</li>
+<li>继承：耦合。</li>
+</ol></li>
+<li>设计模式原则：
+<ol>
+<li>单一职责原则：</li>
+<li>开放-封闭原则：软件的实体应该可以拓展、但不可修改。</li>
+<li>里氏代换原则：子类型必须能够替换掉他们的父类型。</li>
+<li>依赖倒转原则：
+<ol>
+<li>高层模块不应该依赖底层模块。两个都应该依赖抽象。</li>
+<li>抽象不应该依赖细节，细节应该依赖抽象（针对接口编程，不针对实现编程）</li>
+</ol></li>
+<li>迪米特法则：（最少知识原则）如果两个类不必彼此直接通向，那么这两个类就不应当发送直接的相互作用。如果其中一个类需要调用另一个类的某一个方法的话，可以通过第三者转发这个调用。</li>
+<li></li>
+</ol></li>
+<li>模式：（是什么，怎么用，有什么优势，什么时候用）
+<ol>
+<li>简单工厂模式：用一个单独的类来创造示例的过程。</li>
+<li>策略模式：让算法的变化，不影响到使用算法的客户。</li>
+<li>装饰模式：为已有功能动态地添加更多功能的一种方式。把类的核心职责和装饰功能分开。</li>
+<li>代理模式：为其他对象提供一种代理以控制对这个对象的访问。</li>
+<li>工厂方法模式：定义一个用户创建对象的接口，让子类决定实例化哪一个类。</li>
+<li>原型模式：从一个对象再创建另外一个定制的对象，而且不需要知道任何创建的细节。</li>
+<li>模板方法模式：定义一个操作中的算法的骨架，而将一些步骤延迟到之类中。使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。</li>
+<li>外观模式：为子系统中的一组接口提供一个一致的界面，此模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。</li>
+<li>建造者模式：将一个复杂的对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。</li>
+<li>观察者模式：（发布-订阅模式）定义了一种一对多的依赖关系，让多个观察者对象同事监听某一个主题对象。这个主题对象在状态发送变化时，会通知所有的观察者对象，使他们能够自动更新自己。<br/>
+委托事件技术</li>
+<li>抽象工程模式：</li>
+</ol></li>
+</ol>
+
+
+</div>
+
+<br /><br />
+<hr />
+
+<div class="row clearfix">
+  <div class="large-6 columns">
+	<div class="text-left" style="padding:15px 0px;">
+		
+	        <a href="15585857542953.html"  title="Previous Post: 激活">&laquo; 激活</a>
+	    
+	</div>
+  </div>
+  <div class="large-6 columns">
+	<div class="text-right" style="padding:15px 0px;">
+		
+	        <a href="15416644357518.html" 
+	        title="Next Post: 可复制的领导力">可复制的领导力 &raquo;</a>
+	    
+	</div>
+  </div>
+</div>
+
+<div class="row">
+<div style="padding:0px 0.93em;" class="share-comments">
+
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var currentURL = '15513460674140.html';
+		$('#side-nav a').each(function(){
+			if($(this).attr('href') == currentURL){
+				$(this).parent().addClass('active');
+			}
+		});
+	});
+</script>  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+    
+
+
+  </body>
+</html>
